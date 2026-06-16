@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">CASE PROJECT</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prototype1.html">Prototype 1</a></li>
+      <li><a href="prototype2.html">Prototype 2</a></li>
+      <li><a href="prototype3.html">Prototype 3</a></li>
+      <li><a href="final.html">Final Product</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-title">
+      <h1></h1>
+      <span class="tag">GET IN TOUCH</span>
+    </div>
+
+    <section class="card">
+      <h2>Send a message</h2>
+      <form class="contact-form" action="#" method="post">
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Subject
+          <input type="text" name="subject" placeholder="What is this about?" />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" placeholder="Tell me about your request..." required></textarea>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Contact details</h2>
+      <p>If you have feedback on the hardware case design or want to discuss the project, use the form above. You can also reach out by email at <strong>contact@example.com</strong>.</p>
+    </section>
+  </main>
+</body>
+</html>
