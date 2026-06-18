@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+:root {
+  --bg: #1f1e1ef8;
+  --surface: #1a1a1a;
+  --border: #2e2e2e;
+  --accent: #ffffff;
+  --text: #e0e0e0;
+  --muted: #c9c4c4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Unbounded', sans-serif;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav ul a:hover,
+nav ul a.active {
+  color: var(--accent);
+}
+
+/* MAIN */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* HERO */
+.hero {
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: 0.6rem;
+  font-size: 1rem;
+}
+
+/* PAGE TITLE (prototype pages) */
+.page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.page-title .tag {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 3rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+/* CARDS */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  border-radius: 2px;
+}
+
+.card h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* PHOTO PLACEHOLDER */
+.photo-placeholder {
+  width: 100%;
+  min-height: 260px;
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  background: var(--bg);
+}
+.finalcard img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  display: grid;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--text);
+  font: inherit;
+}
+
+.contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: fit-content;
+  border: none;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 1rem 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #e8e8e8;
+  color: #111;
+}
+
+.compare table th, td {
+    border: 1px solid rgb(255, 255, 255);
+  border-collapse: collapse;
+}
+/* td {
+  text-align; center;  */
+
+th, td {
+  background-color: #000000;
+}
+table { 
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+
+th, td {
+  padding: 8px;
+}
+
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+/* 
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.photo-container:hover .tooltip {
+  display: block;
+} */
