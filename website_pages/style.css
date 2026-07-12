@@ -169,7 +169,7 @@ main {
   display: inline-flex;
   width: 64px;
   height: 64px;
-  border: 15px solid var(--border);
+  border: 10px solid var(--border);
   border-radius: 340%;
   overflow: hidden;
   background: var(--surface);
